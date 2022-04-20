@@ -1,0 +1,113 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* font-family: 'Share Tech Mono', monospace; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* try element design */
+.try {
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+input {
+    border: none;
+    background: #ddd;
+    width: 230px;
+    height: 30px;
+    border-radius: 7px;
+    padding: 0 7px;
+    outline: none;
+    font-size: 17px;
+}
+
+
+button {
+    padding: 6px 10px;
+    border: none;
+    font-size: 16px;
+    margin-left: 3px;
+    background: #5b73be;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+
+
+
+/* alart box design */
+.alart-box{
+    display: none;
+}
+
+.alart-box::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.alart-body {
+	display: flex;
+	justify-content: center;
+	padding: 77px 0;
+}
+
+.main-alart {
+    width: 700px;
+    height: 500px;
+    background: #000;
+    z-index: 1;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    padding-top: 107px;
+	position: relative;
+}
+
+.close-icon {
+    color: #fff;
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    font-size: 27px;
+	cursor: pointer;
+	transition: all .3s ease 0s;
+}
+.close-icon:hover {
+	transform: rotate(360deg);
+	color: #f00;
+}
+
+
+.danger-img {
+	width: 245px;
+	border-radius: 100%;
+}
+
+.alart-content {
+    text-align: center;
+}
+.danger-alart {
+    font-family: 'Share Tech Mono', monospace;
+	color: #f00;
+	text-align: center;
+	font-size: 65px;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
